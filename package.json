@@ -1,0 +1,16 @@
+{
+  "name": "ftp-website-deployer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Deploy a local build folder to a webhost over FTP",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "deploy": "node --env-file-if-exists=.env deploy.js"
+  },
+  "devDependencies": {
+    "ftp-deploy": "^2.4.7"
+  }
+}
